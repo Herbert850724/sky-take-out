@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 @Data
+//加入這個註解才可以用builder來建立對象
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
