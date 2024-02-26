@@ -100,4 +100,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     }
 
+    //啟用禁用員工帳號
+    @Override
+    public void startOrStop(Integer status, Long id) {
+        //update employee set status = ? where id = ?
+        Employee employee = Employee.builder().status(status).id(id).build();
+
+        employeeMapper.update(employee);
+    }
+
 }

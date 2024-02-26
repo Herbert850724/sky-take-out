@@ -20,4 +20,7 @@ public interface EmployeeService {
 
     //員工分頁查詢
     public PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+    //啟用禁用員工帳號
+    public void startOrStop(Integer status, Long id);
 }
